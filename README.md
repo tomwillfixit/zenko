@@ -23,7 +23,7 @@ docker run -it --name zenko --network zenko-testing_zenko-net dev-env
 ```
 
 ## Test that it worked
-
+```
 export AWS_ACCESS_KEY_ID=accessKey1
 export AWS_SECRET_ACCESS_KEY=verySecretKey1
 
@@ -40,5 +40,5 @@ upload: ./test.txt to s3://bucket1/test.txt
 
 aws s3 --endpoint http://lb ls s3://bucket1
 2018-06-09 17:36:10       1510 test.txt 
-
+```
 
