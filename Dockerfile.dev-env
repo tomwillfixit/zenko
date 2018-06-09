@@ -1,0 +1,9 @@
+FROM alpine:3.7
+
+# Update and install tool dependencies 
+RUN apk add --update --no-cache curl bash git make python py-pip sudo jq ca-certificates openssl ncurses groff less nodejs tzdata curl file nmap zip 
+
+# Install awscli 
+RUN pip install -U pip && pip install awscli==1.15.4
+
+CMD ["/bin/bash"]
